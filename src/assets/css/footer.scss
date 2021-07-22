@@ -1,0 +1,40 @@
+@import "./Global.scss";
+
+footer {
+  width: 100%;
+  min-height: 300px;
+  background-color: $third-color;
+  border-radius: 3rem 3rem 0 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $six-color;
+  * {
+    margin-bottom: 1rem;
+  }
+  h3 {
+    text-transform: uppercase;
+  }
+  .list-menu {
+    display: flex;
+    list-style-type: none;
+    li:not(:nth-of-type(5)) {
+      margin-right: 0.5rem;
+      border-right: 2px solid #fff;
+    }
+    li {
+      padding: 0 0.5rem;
+      text-transform: uppercase;
+    }
+  }
+  .list-social-media {
+    display: flex;
+    list-style-type: none;
+    li {
+      padding: 0 0.5rem;
+      text-transform: uppercase;
+    }
+  }
+}

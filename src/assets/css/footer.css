@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Boogaloo", cursive;
+  height: 3000px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 640.5px) and (max-width: 1007px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media (min-width: 1007.5px) {
+  .container {
+    width: 85%;
+  }
+}
+
+footer {
+  width: 100%;
+  min-height: 300px;
+  background-color: #121c1d;
+  border-radius: 3rem 3rem 0 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+footer * {
+  margin-bottom: 1rem;
+}
+
+footer h3 {
+  text-transform: uppercase;
+}
+
+footer .list-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+footer .list-menu li:not(:nth-of-type(5)) {
+  margin-right: 0.5rem;
+  border-right: 2px solid #fff;
+}
+
+footer .list-menu li {
+  padding: 0 0.5rem;
+  text-transform: uppercase;
+}
+
+footer .list-social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+footer .list-social-media li {
+  padding: 0 0.5rem;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=footer.css.map */

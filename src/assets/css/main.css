@@ -1,0 +1,513 @@
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Boogaloo", cursive;
+  height: 3000px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 640.5px) and (max-width: 1007px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media (min-width: 1007.5px) {
+  .container {
+    width: 85%;
+  }
+}
+
+main {
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  main .reverse-subscribe .wrapper-content-subscribe {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+}
+
+@media (min-width: 640.5px) and (max-width: 1007px) {
+  main .reverse-subscribe .wrapper-content-subscribe {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+}
+
+@media (max-width: 640px) {
+  main .reverse-subscribe .wrapper-img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+}
+
+@media (min-width: 640.5px) and (max-width: 1007px) {
+  main .reverse-subscribe .wrapper-img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+}
+
+main .subscribe {
+  width: 100%;
+  min-height: 500px;
+  margin-top: 64px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (0.5fr)[2];
+      grid-template-columns: repeat(2, 0.5fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+@media (max-width: 640px) {
+  main .subscribe {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 640.5px) and (max-width: 1007px) {
+  main .subscribe {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+main .subscribe .wrapper-img {
+  background-image: url("../images/subscribe.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+}
+
+main .subscribe .wrapper-content {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1rem;
+}
+
+main .subscribe .wrapper-content * {
+  margin-bottom: 1rem;
+}
+
+main .subscribe .wrapper-content small {
+  color: #ff7d6d;
+  text-transform: capitalize;
+}
+
+main .subscribe .wrapper-content h3 {
+  font-size: 48px;
+  color: #016a70;
+}
+
+main .subscribe .wrapper-content p {
+  font-size: 12px;
+  word-wrap: break-word;
+  line-height: 22px;
+  color: #121c1d;
+}
+
+main .subscribe .wrapper-content .read-more {
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  padding: 0.5rem 1rem;
+  justify-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  border-radius: 2rem;
+  background-color: #ff7d6d;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 640px) {
+  main .subscribe .wrapper-content .read-more {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media (min-width: 640.5px) and (max-width: 1007px) {
+  main .subscribe .wrapper-content .read-more {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+main .features {
+  min-height: 400px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 0.3fr 0.7fr;
+      grid-template-rows: 0.3fr 0.7fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .features h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+main .features .wrapper-features {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (0.2fr)[4];
+      grid-template-columns: repeat(4, 0.2fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 640px) {
+  main .features .wrapper-features {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (0.5fr)[2];
+        grid-template-columns: repeat(2, 0.5fr);
+    -ms-grid-rows: (0.5fr)[2];
+        grid-template-rows: repeat(2, 0.5fr);
+  }
+}
+
+@media (min-width: 640.5px) and (max-width: 1007px) {
+  main .features .wrapper-features {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (0.52fr)[2];
+        grid-template-columns: repeat(2, 0.52fr);
+    -ms-grid-rows: (0.5fr)[2];
+        grid-template-rows: repeat(2, 0.5fr);
+  }
+}
+
+main .features .wrapper-features .one-feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media (max-width: 640px) {
+  main .features .wrapper-features .one-feature {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 640.5px) and (max-width: 1007px) {
+  main .features .wrapper-features .one-feature {
+    margin-bottom: 2rem;
+  }
+}
+
+main .features .wrapper-features .one-feature * {
+  margin-bottom: 1rem;
+}
+
+main .features .wrapper-features .one-feature .icon-feat {
+  font-size: 48px;
+  margin-bottom: 0;
+}
+
+main .features .wrapper-features .one-feature h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #016a70;
+}
+
+main .features .wrapper-features .one-feature p {
+  font-size: 14px;
+  color: #121c1d;
+}
+
+main .download-our-app .parentDownloadApp {
+  background-color: #016a70;
+  color: #ffffff;
+  width: 100%;
+  min-height: 400px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (0.5fr)[2];
+      grid-template-columns: repeat(2, 0.5fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+@media (max-width: 640px) {
+  main .download-our-app .parentDownloadApp {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    margin: 2rem 0;
+  }
+}
+
+@media (min-width: 640.5px) and (max-width: 1007px) {
+  main .download-our-app .parentDownloadApp {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    margin: 2rem 0;
+  }
+}
+
+main .download-our-app .parentDownloadApp .wrapper-image {
+  background-image: url("../images/download-app.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+@media (max-width: 640px) {
+  main .download-our-app .parentDownloadApp .wrapper-image {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 640.5px) and (max-width: 1007px) {
+  main .download-our-app .parentDownloadApp .wrapper-image {
+    margin-bottom: 1rem;
+  }
+}
+
+main .download-our-app .parentDownloadApp .wrapper-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main .download-our-app .parentDownloadApp .wrapper-content * {
+  margin-bottom: 1rem;
+}
+
+main .download-our-app .parentDownloadApp .wrapper-content h3 {
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+main .download-our-app .parentDownloadApp .wrapper-content p {
+  width: 80%;
+}
+
+main .download-our-app .parentDownloadApp .wrapper-content .wrapper-buttons-download {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 640px) {
+  main .download-our-app .parentDownloadApp .wrapper-content .wrapper-buttons-download {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 640.5px) and (max-width: 1007px) {
+  main .download-our-app .parentDownloadApp .wrapper-content .wrapper-buttons-download {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+main .download-our-app .parentDownloadApp .wrapper-content .wrapper-buttons-download .apple {
+  margin-right: 1rem;
+}
+
+main .download-our-app .parentDownloadApp .wrapper-content .wrapper-buttons-download .apple,
+main .download-our-app .parentDownloadApp .wrapper-content .wrapper-buttons-download .google {
+  padding: 0.5rem 1rem 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-radius: 1rem;
+  font-size: 16px;
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
+  -webkit-text-decoration-color: #ff7d6d;
+          text-decoration-color: #ff7d6d;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #ffffff;
+}
+
+main .download-our-app .parentDownloadApp .wrapper-content .wrapper-buttons-download .apple:hover,
+main .download-our-app .parentDownloadApp .wrapper-content .wrapper-buttons-download .google:hover {
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+main .screenshots {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+main .screenshots h3 {
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+main .screenshots .container-screenshots {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (0.18fr)[5];
+      grid-template-columns: repeat(5, 0.18fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1rem 0;
+  height: 400px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 640px) {
+  main .screenshots .container-screenshots {
+    -ms-grid-columns: (0.4fr)[2];
+        grid-template-columns: repeat(2, 0.4fr);
+    -ms-grid-rows: (0.48fr)[3];
+        grid-template-rows: repeat(3, 0.48fr);
+    height: 900px;
+    margin-bottom: 1rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 991.5px) {
+  main .screenshots .container-screenshots {
+    -ms-grid-columns: (0.27fr)[3];
+        grid-template-columns: repeat(3, 0.27fr);
+    -ms-grid-rows: (0.48fr)[2];
+        grid-template-rows: repeat(2, 0.48fr);
+    height: 600px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+main .screenshots .container-screenshots .one-screenshot {
+  height: 100%;
+  border: 2px solid #000;
+  margin-bottom: 1rem;
+  background-image: url("../images/screenshot.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+}
+/*# sourceMappingURL=main.css.map */

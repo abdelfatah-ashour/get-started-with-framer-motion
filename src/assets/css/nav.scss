@@ -1,0 +1,119 @@
+@import "./Global";
+
+nav {
+  background-color: transparent;
+  position: relative;
+  .navbar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.25fr 0.5fr 1fr;
+    grid-template-rows: 80px;
+    align-items: center;
+    .nav-list {
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+      li {
+        text-transform: uppercase;
+      }
+    }
+    .nav-options {
+      display: flex;
+      justify-content: flex-end;
+      div {
+        margin-left: 1rem;
+        padding: 0.5rem 1rem;
+        color: $six-color;
+      }
+      .login {
+        color: $second-color;
+      }
+      .sign-up {
+        background-color: $second-color;
+        border-radius: 1rem;
+      }
+    }
+    .menu-logo {
+      display: none;
+    }
+    .menu-collapse {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      padding: 1rem;
+      background-color: #000;
+      transform: translateY(95%);
+      list-style-type: none;
+      text-align: center;
+      border-radius: 0.5rem;
+      li {
+        margin-bottom: 1rem;
+        a {
+          color: #fff;
+          text-decoration: none;
+          text-transform: uppercase;
+          &:hover {
+            color: $second-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .navbar {
+    grid-template-columns: 0.25fr 1fr;
+    .nav-list {
+      display: none !important;
+    }
+    .nav-options {
+      display: none !important;
+    }
+
+    .menu-logo {
+      display: block !important;
+      justify-self: flex-end;
+      grid-column: 3/4;
+      margin-right: 1rem;
+      border: 0;
+      outline: 0;
+      background-color: transparent;
+      font-size: 22px;
+      &:hover {
+        cursor: pointer;
+        transition: all 0.5s;
+      }
+    }
+  }
+}
+
+@media (min-width: 640.5px) and (max-width: 1007px) {
+  .navbar {
+    grid-template-columns: 0.25fr 1fr;
+    .nav-list {
+      display: none !important;
+    }
+    .nav-options {
+      display: none !important;
+    }
+    .menu-logo {
+      display: block !important;
+      justify-self: flex-end;
+      grid-column: 3/4;
+      margin-right: 1rem;
+      border: 0;
+      outline: 0;
+      background-color: transparent;
+      font-size: 22px;
+      &:hover {
+        cursor: pointer;
+        transition: all 0.5s;
+      }
+    }
+  }
+}
+
+.active-menu {
+  display: none;
+}
